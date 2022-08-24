@@ -1,0 +1,11 @@
+/raw_images
+/test
+/train
+/val
+/log
+.env
+/temp
+__pycache__
+/venv
+/models
+/out
