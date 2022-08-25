@@ -10,9 +10,14 @@ from werkzeug.utils import secure_filename
 
 IMG_SIZE = 150
 LR = 1e-3
-MODEL = './models/herbal-0.001-6conv-basic.model'
 ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png'}
+MODEL = ''
 
+if os.getenv("DEBUG") == "True":
+    MODEL = 'models/herbal-0.001-6conv-basic.model'
+else:
+    MODEL = '/app/server/models/herbal-0.001-6conv-basic.model'
+    
 # App
 app = Flask(__name__) # Initialize the flask App
 
