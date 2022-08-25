@@ -10,7 +10,7 @@ from werkzeug.utils import secure_filename
 
 IMG_SIZE = 150
 LR = 1e-3
-MODEL = 'models/herbal-0.001-6conv-basic.model'
+MODEL = './models/herbal-0.001-6conv-basic.model'
 ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png'}
 
 # App
